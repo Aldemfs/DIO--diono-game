@@ -1,0 +1,47 @@
+body {
+ nbackground: #fafafa;
+  
+}
+
+.ndino {
+  position: absolute;
+  bottom: 0;
+  background-image: url(ndino.png);
+  width: 70px;
+  height: 70px;
+}
+
+.ncactus {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(ncactus.png);
+}
+
+.game-over {
+  text-align: center;
+  color: #FF0000;
+  margin: 50px 0;
+  font-family: big red sans serif font;  
+}
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+.nbackground {
+  position: absolute;
+  bottom: 0px;
+  background-image: url('nbackground.png');
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+}
